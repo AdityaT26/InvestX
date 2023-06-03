@@ -7,7 +7,7 @@ def calculate_ema(data, period):
     weights /= weights.sum()
     ema = np.convolve(data, weights, mode='full')[:len(data)]
     ema[:period-1] = ema[period-1]
-    return ema\
+    return ema
     
 def getStockData(symbol, start_date, end_date):
     # Retrieve the stock data using yfinance
