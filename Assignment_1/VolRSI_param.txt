@@ -1,0 +1,27 @@
+The Volume RSI (Relative Strength Index) is a technical indicator used to analyze the strength of volume flows in a stock or security. It measures the magnitude of recent volume changes and helps identify overbought or oversold conditions.
+
+'volume' -> The input data used to calculate the Volume RSI is the volume data of the stock or security.
+'period' -> The time period is the number of periods used to calculate the Volume RSI. It determines the 
+            length of the lookback window for the RSI calculation. The default value is 14 periods.
+
+
+How is RSI calculated
+
+-> Calculate the RSI (Relative Strength Index) of the volume data using the chosen time period.
+   > The RSI is calculated based on the average gains and losses in volume over the specified time period.
+   > The RSI formula involves the calculation of the Relative Strength (RS), which is the ratio of the average 
+     gain to the average loss over the chosen time period.
+   > The RSI is then calculated as 100 - (100 / (1 + RS)).
+
+-> The resulting RSI values represent the Volume RSI indicator.
+
+
+The Volume RSI can be interpreted as follows:
+
+-> Values above 70 indicate that the volume is overbought, suggesting a potential reversal or decrease in 
+   volume.
+-> Values below 30 indicate that the volume is oversold, suggesting a potential increase or reversal in volume.
+-> Crosses above 70 or below 30 may be considered as potential trading signals, indicating potential buying or 
+   selling opportunities.
+
+

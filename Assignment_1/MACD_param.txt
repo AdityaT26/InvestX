@@ -1,0 +1,37 @@
+MACD or moving average convergence/divergence is as the name measures the difference between two 
+moving or rolling averages usually the fast period (12 day EMA) and slow period (26 day EMA).
+
+'close_prices'  -> This is used to find fast and slow EMAs
+'fast_period'   -> This is the number of periods used to calculate Fast EMA, default is 12 days
+'slow_period'   -> This is the number of periods used to calculate Slow EMA, default is 26 days
+'signal_period' -> This is the number of periods used to calculate the signal line, default is 9 days
+
+The Signal line is a 9 day EMA by default.
+
+
+How is MACD calculated?
+
+-> Calculate the fast EMA (EMA_fast) and slow EMA (EMA_slow) using the chosen fast and slow periods.
+    > The EMA calculates the average price over a specified number of periods, giving more weight to recent 
+      prices.
+
+-> Calculate the MACD line by subtracting the slow EMA from the fast EMA.
+    > The MACD line represents the difference between the fast and slow EMAs and provides insights into the 
+      strength and direction of the trend.
+
+-> Calculate the signal line as a 9-day EMA of the MACD line.
+    > The signal line helps identify potential buy or sell signals when it crosses above or below the MACD 
+      line.
+
+
+The MACD indicator can be interpreted as follows:
+
+-> Traders may buy the security when the MACD line crosses above the signal line and sell—or short—the 
+   security when the MACD line crosses below the signal line.
+
+-> When the MACD line crosses above the signal line, it generates a bullish signal, suggesting a potential 
+   buying opportunity.
+-> When the MACD line crosses below the signal line, it generates a bearish signal, suggesting a potential 
+   selling or short-selling opportunity.
+-> The distance between the MACD line and the signal line can provide insights into the strength of the trend.
+-> Divergence between the MACD and the price chart may indicate a potential trend reversal.
